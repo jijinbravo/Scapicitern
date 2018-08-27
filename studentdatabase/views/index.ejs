@@ -3,68 +3,92 @@
         <title>Database</title>
 
     <style>
-             .head{
-                    width:50%;
-                     text-align:center;
-                     margin-left:350px;
-                     padding: 10px 20px 10px 20px;
-                     color:red;
-                     }
-    
-    .container{
-                text-align:center;
-                margin-left:400px;
-               padding:10px 20px;
-               }
-    table {
-    display: table;
-    border-collapse: collapse;
-    border-spacing: 2px;
-    border-color: grey;
-  }
-    th{
-                border:1px solid black;
-                 margin:30px 30px 30px 30px;
-        padding:20px 20px 20px 20px;
-
-    }
-    td{
-                border:1px solid black;
-                 margin:30px 30px 30px 30px;
-        padding:20px 20px 20px 20px;
-
-    }
-    .but{
-        margin-left:500px;
-        padding:20px;
-        
-    }
-    button{
-        border-radius:5px;
-        padding:10px;
-    }
-    .ul{
+            head{
+          width:50%;
+          border:5px solid grey;
+          text-align:center;
+           margin-left:350px;
+           padding: 10px 20px 10px 20px;
+           color:red;
+           }
+        .container{
+           text-align:center;
+            margin-left:200px;
+            margin-right:200px;
+           padding:10px 20px;
+           }
+        table {
+            border-collapse: collapse;
+            border-spacing: 2px;
+            border-spacing: 2px;
+            border-color: grey;
+            width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+             line-height: 1.5;
+            }
+            thead{
+            line-height: 1.5;
+            display: table-header-group;
+            vertical-align: middle;
+            border-spacing: 2px;
+            border-collapse: collapse;
+            }
+            tr{
+                border:2px solid grey;
+                border-radius:20px;
+            }
+            
+         th{
+           border:2px solid grey;
+            margin:10px;
+            padding:10px;
+            }
+        td{
+            border:2px solid grey;
+         margin:10px;
+         padding:20px;
+         }
+        .but{
+         margin-left:500px;
+         padding:20px;
+            }
+        button{
+         border-radius:2px solid black ;
+         padding:5px;
+         }
+        .ul{
            float:left;
            list-style:none;
            margin-top:20px;
-       }
+          }
        li{
            padding:8px 0;
            text-transform:uppercase;
            font-size:90%;
-           
+       }
+       .cr{
+            font-style:candara;
+       }
+       .rr{
+           padding:7px;
+           margin-left:30px;
+           border-radius:10px;
+           color:black;
+           background-color:white;
+           font-size:15px;
        }
         </style>
     </head>
     <body>
-         <div class="head">
+          <div class="head">
            <h1>WELCOME TO STUDENT DATABASE</h1>
+            <h3>Create new Records</h3>
         </div>
         <div>
          </div>
          <div class="but">
-             <h3>Create new Records</h3>
-         <a href="/stu/new"><button>create</button></a>
+        <h3 class= "cr">Click to create new data<a href="/stu/new"><button class="rr">create</button></a></h3>
       </div>
       <div class="container">
           <table class="table">
