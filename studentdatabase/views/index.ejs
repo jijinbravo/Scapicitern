@@ -48,6 +48,7 @@
             border:2px solid grey;
          margin:10px;
          padding:20px;
+         font-size:150%;
          }
         .but{
          margin-left:500px;
@@ -106,13 +107,13 @@
          <% table.forEach(function(table){%>
            <tbody>
              <tr>
-               <td><%= table.idno %></td>
-               <td><%= table.name %></td>
-               <td><%= table.age  %></td>
-               <td><%= table.gender %></td>
-               <td><a href="/stu/<%= table._id %>" ><button>read more</button></a></td>
-               <td><a href="/stu/<%= table._id %>/update" ><button>update</button></a></td>
-               <td><form action="/stu/<%=table._id %>?_method=DELETE" method="POST"><button>delete</button></form></td>
+               <td><center><%= table.idno %></center></td>
+               <td><center><%= table.name %></center></td>
+               <td><center><%= table.age  %></center></td>
+               <td><center><%= table.gender %></center></td>
+               <td><center><a href="/stu/<%= table._id %>" ><button>read more</button></a></center></td>
+               <td><center><a href="/stu/<%= table._id %>/update" ><button>update</button></a></center></td>
+               <td><center><form action="/stu/<%=table._id %>?_method=DELETE" method="POST"><button>delete</button></form></center></td>
              </tr>
            </tbody>
            <% }); %>
