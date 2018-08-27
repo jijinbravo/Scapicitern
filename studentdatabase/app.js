@@ -36,7 +36,7 @@ app.get("/stu",function(req,res){
  });
 });
 
-//create
+//create==================================================================
  app.get("/stu/new",function(req,res){
       res.render("new"); 
    });
@@ -56,10 +56,10 @@ app.get("/stu",function(req,res){
          }
       });
    });
+ //create====END==============================================================
+
    
-   
-   
-   // SHOW ROUTE
+   //SHOW ROUTE=============================================================
 app.get("/stu/:id", function(req, res){
    Table.findById(req.params.id, function(err, foundstu){
        if(err){
@@ -69,7 +69,10 @@ app.get("/stu/:id", function(req, res){
        }
    });
 });
-      ///update route
+
+   //SHOW ROUTE===END==========================================================
+
+///update route====================================================================
 
 app.get("/stu/:id/update", function(req, res){
     Table.findById(req.params.id, function(err, foundstu){
@@ -80,9 +83,10 @@ app.get("/stu/:id/update", function(req, res){
         }
     });
 });
+///update route======END==============================================================
 
 
-// UPDATE ROUTE
+// UPDATE ROUTE========================================================================
 app.put("/stu/:id", function(req, res){
      var name=req.body.name,
        idno=req.body.idno,
@@ -97,7 +101,9 @@ app.put("/stu/:id", function(req, res){
       }
    });
 });
-//delete route
+// UPDATE ROUTE==END======================================================================
+
+//delete route=================================================================================
 app.delete("/stu/:id", function(req, res){
    //delete stu
    Table.findByIdAndRemove(req.params.id, function(err){
@@ -107,8 +113,8 @@ app.delete("/stu/:id", function(req, res){
            res.redirect("/stu");
        }
    });
-   //redirect somewhere
 });
+//delete route=END================================================================================
 
      //   Server listening
    app.listen(process.env.PORT,process.env.IP,function(){
