@@ -1,9 +1,8 @@
 <html>
     <head>
         <title>Database</title>
-
-    <style>
-            head{
+        <style>
+        .head{
           width:50%;
           border:5px solid grey;
           text-align:center;
@@ -82,7 +81,7 @@
         </style>
     </head>
     <body>
-          <div class="head">
+         <div class="head">
            <h1>WELCOME TO STUDENT DATABASE</h1>
             <h3>Create new Records</h3>
         </div>
@@ -104,8 +103,8 @@
                <th>delete</th>
              </tr>
            </thead>
-         <% table.forEach(function(table){%>
-           <tbody>
+            <% table.forEach(function(table){%>
+            <tbody>
              <tr>
                <td><center><%= table.idno %></center></td>
                <td><center><%= table.name %></center></td>
