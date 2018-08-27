@@ -1,52 +1,50 @@
 # Scapicitern
                                   IMPORTANT NOTE TO RUN THE FILE
                                   
-   THIS WWHOLE APPLICATION IS BUILD IN C9 CLOUD PLATFORM
+   THIS WHOLE APPLICATION IS BUILD IN C9 CLOUD PLATFORM
    
-   NOTE:
-      1.INSTALL NEED LIBRARIES
-          # npm install express --save (express js ,node js framework)
-          #npm install mongoose --save (mongo db)
-          #npm install body-parser  --save  
-          #npm install ejs --save (all html files saved with .ejs extension)
-          #npm install method-override --save 
-          #npm install nodemon --save
+   NOTE:<br>
+      1.INSTALL NEED LIBRARIES<br>
+          # npm install express --save (express js ,node js framework)<br>
+          #npm install mongoose --save (mongo db)<br>
+          #npm install body-parser  --save  <br>
+          #npm install ejs --save (all html files saved with .ejs extension)<br>
+          #npm install method-override --save <br>
+          #npm install nodemon --save<br>
           
-   2.download mongodb
-         1.switch to workspace directory
-         2.excute the following commands
-                 $ sudo apt-get install -y mongodb-org
-                 $ mkdir data
-                 $ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
-                 $ chmod a+x mongod
-           //run mongo db using following command
-                 $ ./mongod
+   2.download mongodb<br>
+         1.switch to workspace directory<br>
+         2.excute the following commands<br>
+                 $ sudo apt-get install -y mongodb-org<br>
+                 $ mkdir data<br>
+                 $ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod<br>
+                 $ chmod a+x mongod<br>
+           //run mongo db using following command<br>
+                 $ ./mongod<br>
                  
-   3.Now run the application by following steps
-          //////run the "app.js " file to excute/////
-          1.switch to studentdatabase directory
-          2.run by $ nodemon app.js
-          3.after running the server
-          4.click preview to view the output
+   3.Now run the application by following steps<br>
+          //////run the "app.js " file to excute/////<br>
+          1.switch to studentdatabase directory<br>
+          2.run by $ nodemon app.js<br>
+          3.after running the server<br>
+          4.click preview to view the output<br>
           
-  /////////////////////////////////////////////
-  
-  4.Error
-      #if any error occurs in running mongo database follow the steps below
-          1.try to repair
-                  or
-           2.delete the data folder directory
-           3.and delete the mongod file
-           4.after deleting ,install mongodb by running following commands
-               //execute in workspace directory///
-           5 .excute the following commands
-                 $ sudo apt-get install -y mongodb-org
-                 $ mkdir data
-                 $ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
-                 $ chmod a+x mongod
-           //run mongo db using following command
-                 $ ./mongod
-              6.now mongodb run fine and good to go and proceed with app.js
+  4.Error<br>
+      #if any error occurs in running mongo database follow the steps below<br>
+          1.try to repair<br>
+                  or<br>
+           2.delete the data folder directory<br>
+           3.and delete the mongod file<br>
+           4.after deleting ,install mongodb by running following commands<br>
+               //execute in workspace directory///<br>
+           5 .excute the following commands<br>
+                 $ sudo apt-get install -y mongodb-org<br>
+                 $ mkdir data<br>
+                 $ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod<br>
+                 $ chmod a+x mongod<br>
+           //run mongo db using following command<br>
+                 $ ./mongod<br>
+              6.now mongodb run fine and good to go and proceed with app.js<br>
               
           
     
