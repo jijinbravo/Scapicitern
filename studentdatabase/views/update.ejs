@@ -32,12 +32,12 @@
        <div class="head">
             <h1> Update StudentDatabase</h1>
             <h3>Enter the student details</h3>
-            <h4><%= table.name %>Records</h4>
+            <h4><%= table.name %>  Records</h4>
         </div>
          <div class="container">
         <form action="/stu/<%= table._id %>?_method=PUT" method="POST">
             <div>
-                <labe class="l"> Name</label>
+                <label class="l"> Name</label>
                 <input class="l" type="text" name="name" value="<%= table.name %>">
                 </div>
                 <div >
