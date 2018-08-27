@@ -1,0 +1,63 @@
+<!document>
+<html>
+   <head>
+      <title>Student database</title>
+      <style>
+          .l{
+           font-size: 16px;
+			text-transform: uppercase;
+			padding: 10px 5px 10px 10px;
+			margin:20px 20px;
+			border-radius:5px;
+               }
+                .container{
+                width:30%;
+                text-align:center;
+                border:1px solid grey;
+                margin-left:500px;
+               border-radius:40px;
+               padding:10px 10px;
+               }
+               .head{
+                    width:50%;
+                     text-align:center;
+                     margin-left:350px;
+                     padding: 10px 20px 10px 20px;
+                     color:red;
+                     }
+      </style>
+   </head>
+   <body>
+       
+       <div class="head">
+            <h1> Update StudentDatabase</h1>
+            <h3>Enter the student details</h3>
+            <h4><%= table.name %>Records</h4>
+        </div>
+         <div class="container">
+        <form action="/stu/<%= table._id %>?_method=PUT" method="POST">
+            <div>
+                <labe class="l"> Name</label>
+                <input class="l" type="text" name="name" value="<%= table.name %>">
+                </div>
+                <div >
+                <label class="l"> Idno</label>
+                <input  class="l"type="Number" name="idno" value="<%= table.idno %>">
+                </div>
+                <div>
+                <label class="l"> Age</label>
+                <input  class="l" type="Number" name="age" value="<%=table.age %>">
+                </div>
+                <div >
+                <label class="l">Gender</label>
+                <input  class="l" type="text" name="gender" value="<%= table.gender %>">
+             </div>
+           
+            <div>          
+                 <a href="/ "><button class="l">home</button></a>
+                <input class="l" type="submit">
+           </div>
+        </form>
+        </div>
+    </body>
+</html> 

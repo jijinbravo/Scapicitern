@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Database</title>
+
+    <style>
+             .head{
+                    width:50%;
+                     text-align:center;
+                     margin-left:350px;
+                     padding: 10px 20px 10px 20px;
+                     color:red;
+                     }
+    
+    .container{
+                text-align:center;
+                margin-left:400px;
+               padding:10px 20px;
+               }
+    table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-color: grey;
+  }
+    th{
+                border:1px solid black;
+                 margin:30px 30px 30px 30px;
+        padding:20px 20px 20px 20px;
+
+    }
+    td{
+                border:1px solid black;
+                 margin:30px 30px 30px 30px;
+        padding:20px 20px 20px 20px;
+
+    }
+    .but{
+        margin-left:500px;
+        padding:20px;
+        
+    }
+    button{
+        border-radius:5px;
+        padding:10px;
+    }
+    .ul{
+           float:left;
+           list-style:none;
+           margin-top:20px;
+       }
+       li{
+           padding:8px 0;
+           text-transform:uppercase;
+           font-size:90%;
+           
+       }
+        </style>
+    </head>
+    <body>
+         <div class="head">
+           <h1>WELCOME TO STUDENT DATABASE</h1>
+        </div>
+        <div>
+         </div>
+         <div class="but">
+             <h3>Create new Records</h3>
+         <a href="/stu/new"><button>create</button></a>
+      </div>
+      <div class="container">
+          <table class="table">
+           <thead>
+             <tr>
+               <th>IDNO</th>
+               <th>NAME</th>
+               <th>AGE</th>
+               <th>GENDER</th>
+               <th>READ</th>
+               <th>update</th>
+               <th>delete</th>
+             </tr>
+           </thead>
+         <% table.forEach(function(table){%>
+           <tbody>
+             <tr>
+               <td><%= table.idno %></td>
+               <td><%= table.name %></td>
+               <td><%= table.age  %></td>
+               <td><%= table.gender %></td>
+               <td><a href="/stu/<%= table._id %>" ><button>read more</button></a></td>
+               <td><a href="/stu/<%= table._id %>/update" ><button>update</button></a></td>
+               <td><form action="/stu/<%=table._id %>?_method=DELETE" method="POST"><button>delete</button></form></td>
+             </tr>
+           </tbody>
+           <% }); %>
+         </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Database</title>
+        <style>
+             .l{
+           font-size: 16px;
+			text-transform: uppercase;
+			padding: 7px 5px 7px 5px;
+			margin:20px 20px;
+			border-radius:5px;
+               }
+                .container{
+                width:30%;
+                text-align:center;
+                border:1px solid grey;
+                margin-left:500px;
+               border-radius:40px;
+               padding:7px 10px;
+               }
+               .head{
+                    width:50%;
+                     text-align:center;
+                     margin-left:350px;
+                     padding: 10px 20px 10px 20px;
+                     color:red;
+                     }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <h1> Create Studentdatabase</h1>
+        <h3>Enter the student details</h3>
+        </div>
+      
+          <div class="container">
+        <form action="/stu" method="POST">
+         <div>
+            <label class="l"> Name</label>
+             <input class="l" type="text" name="name" placeholder="Enter your Name" required>
+        </div>
+        <div >
+             <label class="l"> Idno</label>
+            <input  class="l" type="Number" name="idno" placeholder="Enter your id no..." required>
+        </div>
+        <div>
+            <label class="l"> Age</label>
+            <input  class="l" type="Number" name="age" placeholder="Enter your AGE..." required>
+        </div>
+        <div >
+            <label class="l">Gender</label>
+            <input  class="l" type="text" name="gender" placeholder="Enter your gender..." required>
+         </div>
+          <div>          
+                <input class="l" type="submit">
+                
+           </div>
+         </form>
+         <a href="/ "><button class="l">home</button></a>
+      </div>
+
+    </body>
+</html>
