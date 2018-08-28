@@ -15,8 +15,8 @@
    $ npm install nodemon --save
    ```    
   ### 2.Backend Configurations :
-   1.switch to workspace directory
-   2.excute the following commands
+   1.switch to workspace directory<br>
+   2.excute the following commands<br>
    ```sh
    $ sudo apt-get install -y mongodb-org
    $ mkdir data
@@ -28,11 +28,11 @@
    $ ./mongod
    ```       
   ### 3.Now run the application by following steps
-   //////run the "app.js " file to excute/////
+   //////run the "app.js " file to excute/////<br>
   1.switch to studentdatabase directory<br>
-  2.run by $ nodemon app.js
-  3.after running the server
-  4.click preview to view the output
+  2.run by $ nodemon app.js<br>
+  3.after running the server<br>
+  4.click preview to view the output<br>
           
   ### 4.Error part
   In case of  any error occurs in running mongo database follow the steps below
