@@ -6,14 +6,14 @@
     and this application is build in cloud 9 flatform
   ## How it works ?
    ###  1.INSTALL NEED LIBRARIES
-    ```sh
-        $ npm install express --save (express js ,node js framework)
-        $ npm install mongoose --save (mongo db)
-        $ npm install body-parser  --save  
-        $ npm install ejs --save (all html files saved with .ejs extension)
-        $ npm install method-override --save 
-        $ npm install nodemon --save
-     ```    
+```sh
+   $ npm install express --save (express js ,node js framework)
+   $ npm install mongoose --save (mongo db)
+   $ npm install body-parser  --save  
+   $ npm install ejs --save (all html files saved with .ejs extension
+   $ npm install method-override --save
+   $ npm install nodemon --save
+   ```    
   ###  2.Backend Configurations :
          1.switch to workspace directory
          2.excute the following commands
