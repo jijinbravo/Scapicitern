@@ -36,8 +36,7 @@
           
   ### 4.Error part
   In case of  any error occurs in running mongo database follow the steps below<br>
-   1.try to repair<br>
-         or<br>
+   1.try to repair OR follows the steps<br>
    2.delete the data folder directory<br>
    3.and delete the mongod file<br>
    4.after deleting ,install mongodb by running following commands<br>
@@ -51,7 +50,7 @@
    /run mongo db using following command<br>
       $ ./mongod
    ```
-   6.now mongodb run fine and good to go and proceed with app.js<br>
+   6.now mongodb run fine and good to go and proceed with<strong> $ nodemon app.js</strong><br>
               
           
     
