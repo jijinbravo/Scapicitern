@@ -2,7 +2,7 @@
                                   IMPORTANT NOTE TO RUN THE FILE
   
   # scapic intern Assignment
-   This purpose of this app is to create Read Update and Delete the studentdatabase  using the Nodejs with mongodb as database.
+   The purpose of this app is to create Read Update and Delete the studentdatabase  using the Nodejs with mongodb as database.
    and this application is build in cloud 9 flatform
     
   ## How it works ?
