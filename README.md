@@ -28,21 +28,21 @@
    $ ./mongod
    ```       
   ### 3.Now run the application by following steps
-   //////run the "app.js " file to excute/////<br>
-  1.switch to studentdatabase directory<br>
-  2.run by $ nodemon app.js<br>
-  3.after running the server<br>
-  4.click preview to view the output<br>
+   //////run the "app.js " file to excute the application/////<br>
+       1.switch to studentdatabase directory<br>
+       2.run by <strong> $ nodemon</strong> app.js<br>
+       3.after running the server<br>
+       4.click preview to view the output<br>
           
   ### 4.Error part
-  In case of  any error occurs in running mongo database follow the steps below
-   1.try to repair
-         or
-   2.delete the data folder directory
-   3.and delete the mongod file
-   4.after deleting ,install mongodb by running following commands
-       //execute in workspace directory///
-   5 .excute the following commands
+  In case of  any error occurs in running mongo database follow the steps below<br>
+   1.try to repair<br>
+         or<br>
+   2.delete the data folder directory<br>
+   3.and delete the mongod file<br>
+   4.after deleting ,install mongodb by running following commands<br>
+       //execute in workspace directory///<br>
+   5 .excute the following commands<br>
    ```sh
       $ sudo apt-get install -y mongodb-org
       $ mkdir data<br>
@@ -51,7 +51,7 @@
    /run mongo db using following command<br>
       $ ./mongod
    ```
-   6.now mongodb run fine and good to go and proceed with app.js
+   6.now mongodb run fine and good to go and proceed with app.js<br>
               
           
     
