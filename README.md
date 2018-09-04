@@ -45,13 +45,13 @@
    5 .excute the following commands<br>
    ```sh
       $ sudo apt-get install -y mongodb-org
-      $ mkdir data<br>
+      $ mkdir data
       $ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
       $ chmod a+x mongod
-   /run mongo db using following command<br>
+   /run mongo db using following command
       $ ./mongod
    ```
-   6.now mongodb run fine and good to go and proceed with ``` $ nodemon app.js ```<br>
+   6.now mongodb run fine and good to go and proceed with ``` $ nodemon app.js ```
               
           
     
