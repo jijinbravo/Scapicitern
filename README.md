@@ -1,12 +1,12 @@
 # Scapicitern
-                                  IMPORTANT NOTE TO RUN THE FILE
+                                  IMPORTANT NOTE TO RUN THE APPLICATION
   
   # scapic intern Assignment
    The purpose of this app is to create Read Update and Delete the studentdatabase  using the Nodejs with mongodb as database.
    and this application is build in cloud 9 flatform
     
   ## How it works ?
-   ### 1.INSTALL NEED LIBRARIES
+   ### 1.INSTALL NEEDED LIBRARIES
 ```sh
    $ npm install express --save (express js ,node js framework)
    $ npm install mongoose --save (mongo db)
@@ -29,7 +29,7 @@
    $ ./mongod
    ```       
   ### 3.Now run the application by following steps
-   //////run the "app.js " file to excute the application/////<br>
+   <STARONG>run the "app.js " file to excute the application</STRONG><br>
        1.switch to studentdatabase directory<br>
        2.run by ```$ nodemon app.js```<br>
        3.after running the server<br>
